@@ -1,0 +1,1267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EVJoysticTestMode</name>
+    <events>
+        <event-group description="" sid="692038471441471" title="Analogic Left">
+            <sub-events>
+                <variable constant="0" name="Dpad_X" sid="376921405938201" static="1" type="number">0</variable>
+                <variable constant="0" name="Dpad_Y" sid="462973529250197" static="1" type="number">0</variable>
+                <comment>-&#x0D;&#x0A;Does not show Left and Right&#x0D;&#x0A;Shows only Up and Down with diagonals&#x0D;&#x0A;Holds fixed the Up or Down command</comment>
+                <event-block sid="784264325104050">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="213409071546910" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">24</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="671701020489532" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">-24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="972038894086415" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>-&#x0D;&#x0A;Does not show UP and Down&#x0D;&#x0A;Shows only  Left and Right with diagonals&#x0D;&#x0A;Holds fixed the Left ou Right command</comment>
+                <event-block sid="513245081858912">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="652879066508682" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">24</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="870309717383487" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">-24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="452552701999865" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;Right</comment>
+                <event-block sid="109965621573446">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="262598303980916" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">5</param>
+                            <param id="3" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="526762799748883" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;Left</comment>
+                <event-block sid="162977748397459">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="791064684035842" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">3</param>
+                            <param id="3" name="Value">-25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="668847838760056" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;Down</comment>
+                <event-block sid="937900863172248">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="219016159642605" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">5</param>
+                            <param id="3" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="178920188763946" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;UP</comment>
+                <event-block sid="737005345105225">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="159899360291885" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">3</param>
+                            <param id="3" name="Value">-25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="974979728995328" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Button pressed</comment>
+                <event-block sid="784818999762411">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="499421648458178" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="802132206475220" type="Btn_middle">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="902005622153112" type="System">
+                            <param id="0" name="Object to create">Btn_middle</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">170.583</param>
+                            <param id="3" name="Y">194.48</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="841380144215123" type="Btn_middle" />
+                        <action id="-16" name="Wait" sid="488649734593701" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="598769036441142" type="Btn_middle" />
+                    </actions>
+                </event-block>
+                <comment>Right</comment>
+                <event-block sid="760966244960056">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="279976408870932" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="119210994483096" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="422142120832142" type="Analog_Left">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="430757722633495" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="180117127142784" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Bottom Right Diagonal</comment>
+                <event-block sid="884959201594694">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="270347962872483" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="270016938419095" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="322136512673114" type="Analog_Left">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="165367440889614" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="571096780240143" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Down</comment>
+                <event-block sid="204273227816210">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="164563713024622" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="542811204577739" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="705816203937034" type="Analog_Left">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="188817073491717" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="215681227343897" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Bottom Left Diagonal</comment>
+                <event-block sid="298544992882055">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="568010010862138" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="495034400992831" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="793011125175038" type="Analog_Left">
+                            <param id="0" name="Frame number">4</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="140044141798596" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="862457792667602" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Left</comment>
+                <event-block sid="666245103724006">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="329605036610116" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="432563607996140" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="311407924026542" type="Analog_Left">
+                            <param id="0" name="Frame number">5</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="937364074252816" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="792678520384070" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Upper Left Diagonal</comment>
+                <event-block sid="201749445854570">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="172532170861156" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="787750059937188" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="593910883319053" type="Analog_Left">
+                            <param id="0" name="Frame number">6</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="515368123453215" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="719814915954617" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>UP</comment>
+                <event-block sid="580187280202476">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="502794486743200" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="163143475640439" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="417159620978447" type="Analog_Left">
+                            <param id="0" name="Frame number">7</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="207329925462321" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="825047669066848" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Upper Right Diagonal</comment>
+                <event-block sid="225892754215712">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="557463768927885" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="792373481323681" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="589034954797982" type="Analog_Left">
+                            <param id="0" name="Frame number">8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="981507227488383" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="692463525412652" type="Analog_Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="565550336569176" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="555021836947994" title="Analogic Right">
+            <sub-events>
+                <variable constant="0" name="Dpad_X" sid="966132978066005" static="0" type="number">0</variable>
+                <variable constant="0" name="Dpad_Y" sid="538247031882256" static="0" type="number">0</variable>
+                <comment>-&#x0D;&#x0A;Does not show Left and Right&#x0D;&#x0A;Shows only Up and Down with diagonals&#x0D;&#x0A;Holds fixed the Up or Down command</comment>
+                <event-block sid="919655957221152">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="364965301929927" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">24</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="442336342055035" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">-24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="432552667170321" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>-&#x0D;&#x0A;Does not show UP and Down&#x0D;&#x0A;Shows only  Left and Right with diagonals&#x0D;&#x0A;Holds fixed the Left ou Right command</comment>
+                <event-block sid="763262933183751">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="820182197272191" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">3</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">24</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="248635387714823" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">3</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">-24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="584566336330732" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;Right</comment>
+                <event-block sid="302507561737886">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="785076747985957" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">5</param>
+                            <param id="3" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="818202978495525" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;Left</comment>
+                <event-block sid="306588335634955">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="235162041396522" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">3</param>
+                            <param id="3" name="Value">-25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="579622439131448" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;Down</comment>
+                <event-block sid="646078117694480">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="680693404576564" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">3</param>
+                            <param id="2" name="Comparison">5</param>
+                            <param id="3" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="879913941507376" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>- &#x0D;&#x0A;UP</comment>
+                <event-block sid="465719131720885">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="468502902833099" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">3</param>
+                            <param id="2" name="Comparison">3</param>
+                            <param id="3" name="Value">-25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="988725351496859" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Button pressed</comment>
+                <event-block sid="466258470175672">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="866137022372732" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="955477075153209" type="Btn_middle">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="443334864564640" type="System">
+                            <param id="0" name="Object to create">Btn_middle</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">277.106</param>
+                            <param id="3" name="Y">237.304</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="679071998085982" type="Btn_middle" />
+                        <action id="-16" name="Wait" sid="582839797568806" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="718759452014789" type="Btn_middle" />
+                    </actions>
+                </event-block>
+                <comment>Left</comment>
+                <event-block sid="108611073475411">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="352756994970683" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="733272809858336" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="230090106482963" type="Analog_Right">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="276865265665247" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="205038050338783" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Upper Left Diagonal</comment>
+                <event-block sid="755183380463613">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="106124737102469" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="407164609545773" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="666119857662731" type="Analog_Right">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="855817104150390" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="115513886645702" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Up</comment>
+                <event-block sid="972445281636864">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="158713429867526" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="166265693307501" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="962483043755628" type="Analog_Right">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="809816896802597" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="761786244070509" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Upper Right Diagonal</comment>
+                <event-block sid="751170457757193">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="685632661798378" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="920364783520658" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="935786023708476" type="Analog_Right">
+                            <param id="0" name="Frame number">4</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="197335957563912" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="905524737330393" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Right</comment>
+                <event-block sid="705937206628973">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="117801971070166" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="576345800395141" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="428573882132179" type="Analog_Right">
+                            <param id="0" name="Frame number">5</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="424007530471416" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="996723887282438" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Bottom Right Diagonal</comment>
+                <event-block sid="632566420958609">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="740286641018981" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="705265429842006" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="739934660157678" type="Analog_Right">
+                            <param id="0" name="Frame number">6</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="278551958341656" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="468746078610110" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Down</comment>
+                <event-block sid="307558152567155">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="659240396317559" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="734899085964533" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="744839974040568" type="Analog_Right">
+                            <param id="0" name="Frame number">7</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="894305131198695" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="820282581355235" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Bottom Left Diagonal</comment>
+                <event-block sid="374643930491088">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="702357646381926" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="302661263305798" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="446579105938457" type="Analog_Right">
+                            <param id="0" name="Frame number">8</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="543150283234360" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="802085801757840" type="Analog_Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="553456634762357" title="Dpad">
+            <sub-events>
+                <variable constant="0" name="Dpad_X" sid="842517720611522" static="1" type="number">0</variable>
+                <variable constant="0" name="Dpad_Y" sid="656024678354520" static="1" type="number">0</variable>
+                <comment>Up</comment>
+                <event-block any="1" sid="506010600892776">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="376132357822093" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="515845475444875" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="680727280320492" type="Dpad">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="754213618902102" type="System">
+                            <param id="0" name="Object to create">Dpad</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">204.488</param>
+                            <param id="3" name="Y">224.439</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="894386463618773" type="Dpad" />
+                        <action id="-16" name="Wait" sid="957186382063248" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="627015868240484" type="Dpad" />
+                    </actions>
+                </event-block>
+                <comment>Down</comment>
+                <event-block any="1" sid="908597406612690">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="429178343123757" type="System">
+                            <param id="0" name="Variable">Dpad_Y</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="669073020840267" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="567197702267271" type="Dpad">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="392915279437365" type="System">
+                            <param id="0" name="Object to create">Dpad</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">205.299</param>
+                            <param id="3" name="Y">256.194</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="678979770950473" type="Dpad" />
+                        <action id="-16" name="Wait" sid="286547284652575" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="322055448187116" type="Dpad" />
+                    </actions>
+                </event-block>
+                <comment>Left</comment>
+                <event-block any="1" sid="833665933490234">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="546467752602199" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="580692941925789" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="968883012158550" type="Dpad">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="765138755970438" type="System">
+                            <param id="0" name="Object to create">Dpad</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">189.308</param>
+                            <param id="3" name="Y">239.941</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="373482277227788" type="Dpad" />
+                        <action id="-16" name="Wait" sid="427304189200247" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="497556590997444" type="Dpad" />
+                    </actions>
+                </event-block>
+                <comment>Right</comment>
+                <event-block any="1" sid="109556770117929">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="564720806393251" type="System">
+                            <param id="0" name="Variable">Dpad_X</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="241722668943203" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="963150408414666" type="Dpad">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="655371534212340" type="System">
+                            <param id="0" name="Object to create">Dpad</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">222.144</param>
+                            <param id="3" name="Y">240.727</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="362520628361294" type="Dpad" />
+                        <action id="-16" name="Wait" sid="654769895418820" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="992194539134262" type="Dpad" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="L1&#x0D;&#x0A;L2&#x0D;&#x0A;" sid="180449384853918" title="L_Btn">
+            <sub-events>
+                <variable comment="1=L1 /// 2=L2" constant="0" name="btn_L" sid="307248813379622" static="1" type="number">0</variable>
+                <comment>L2</comment>
+                <event-block any="1" sid="848118341263646">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="519087854535803" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="233637411468144" type="System">
+                            <param id="0" name="Variable">btn_L</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="134713137976405" type="L_R">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="314759489233775" type="System">
+                            <param id="0" name="Object to create">L_R</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">176.801</param>
+                            <param id="3" name="Y">57</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="349328079042523" type="L_R" />
+                        <action id="-16" name="Wait" sid="486312343844743" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="189170221944847" type="L_R" />
+                        <action id="-9" name="Set value" sid="553080515505439" type="System">
+                            <param id="0" name="Variable">btn_L</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>L1</comment>
+                <event-block any="1" sid="452547095654619">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="453691107806575" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">6</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="393811280192232" type="System">
+                            <param id="0" name="Variable">btn_L</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="375665819371084" type="L_R">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="735742659554487" type="System">
+                            <param id="0" name="Object to create">L_R</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">160.4</param>
+                            <param id="3" name="Y">23.599</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="155706481339098" type="L_R" />
+                        <action id="-16" name="Wait" sid="513786120407244" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="192660469870480" type="L_R" />
+                        <action id="-9" name="Set value" sid="611450281844245" type="System">
+                            <param id="0" name="Variable">btn_L</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="R1&#x0D;&#x0A;R2&#x0D;&#x0A;" sid="295228500077098" title="R_Btn">
+            <sub-events>
+                <variable comment="1=R1 /// 2=R2" constant="0" name="btn_R" sid="158949396285105" static="1" type="number">0</variable>
+                <comment>R2</comment>
+                <event-block any="1" sid="253814963502689">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="598179994513733" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="256594734059058" type="System">
+                            <param id="0" name="Variable">btn_R</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="484097725175077" type="L_R">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="795283968891692" type="System">
+                            <param id="0" name="Object to create">L_R</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">312.199</param>
+                            <param id="3" name="Y">58</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="837959820268051" type="L_R" />
+                        <action id="-16" name="Wait" sid="404107514767535" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="240417073022539" type="L_R" />
+                        <action id="-9" name="Set value" sid="515293003841261" type="System">
+                            <param id="0" name="Variable">btn_R</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>R1</comment>
+                <event-block any="1" sid="748432562871018">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="358583334045511" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">7</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="160924517684366" type="System">
+                            <param id="0" name="Variable">btn_R</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="506226954475610" type="L_R">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="267128193105393" type="System">
+                            <param id="0" name="Object to create">L_R</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">325.601</param>
+                            <param id="3" name="Y">25</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="648444529623480" type="L_R" />
+                        <action id="-16" name="Wait" sid="381163878765179" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="842312008212241" type="L_R" />
+                        <action id="-9" name="Set value" sid="758210474644203" type="System">
+                            <param id="0" name="Variable">btn_R</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="X Y&#x0D;&#x0A;A B&#x0D;&#x0A;" sid="397142877347267" title="Btn&apos;s_Actions">
+            <sub-events>
+                <variable comment="1=A /// 2=B /// 3=X /// 4=Y" constant="0" name="btn_action" sid="536743672902872" static="1" type="number">0</variable>
+                <comment>A&#x0D;&#x0A;Variable: 1</comment>
+                <event-block any="1" sid="991758284672260">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="192650751718223" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="591042344757112" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="438200656900072" type="Btn_A">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="897289026689289" type="System">
+                            <param id="0" name="Object to create">Btn_A</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">312.482</param>
+                            <param id="3" name="Y">213.73</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="581629480741713" type="Btn_A" />
+                        <action id="-16" name="Wait" sid="111280340018759" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="182468848864493" type="Btn_A" />
+                        <action id="-9" name="Set value" sid="293441908231809" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>B&#x0D;&#x0A;Variable: 2</comment>
+                <event-block any="1" sid="146566654397459">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="555334930918590" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="239356004729333" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="898936903699890" type="Btn_B">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="988747641678144" type="System">
+                            <param id="0" name="Object to create">Btn_B</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">332.481</param>
+                            <param id="3" name="Y">196.13</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="388326018295811" type="Btn_B" />
+                        <action id="-16" name="Wait" sid="247541804416236" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="468630959223443" type="Btn_B" />
+                        <action id="-9" name="Set value" sid="809481723228250" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>X&#x0D;&#x0A;Variable: 3</comment>
+                <event-block any="1" sid="140880861907481">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="201516432946766" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="848220071437963" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="303158480362841" type="Btn_X">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="459187525661145" type="System">
+                            <param id="0" name="Object to create">Btn_X</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">293.282</param>
+                            <param id="3" name="Y">195.33</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="522921647044734" type="Btn_X" />
+                        <action id="-16" name="Wait" sid="812964516979690" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="531422123942301" type="Btn_X" />
+                        <action id="-9" name="Set value" sid="928593422289945" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Y&#x0D;&#x0A;Variable: 4</comment>
+                <event-block any="1" sid="436566394410008">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="725643308468322" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="447647693916670" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="786145252209365" type="Btn_Y">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="145242700582505" type="System">
+                            <param id="0" name="Object to create">Btn_Y</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">314.082</param>
+                            <param id="3" name="Y">177.73</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="396297496762850" type="Btn_Y" />
+                        <action id="-16" name="Wait" sid="166177364633933" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="987683248981193" type="Btn_Y" />
+                        <action id="-9" name="Set value" sid="830134066542941" type="System">
+                            <param id="0" name="Variable">btn_action</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Conected on / off" sid="406379406860156" title="System">
+            <sub-events>
+                <comment>Gamepad Connected</comment>
+                <event-block sid="719323310709763">
+                    <conditions>
+                        <condition id="1" name="On gamepad connected" sid="743518915198663" type="Gamepad" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="435453111365643" type="Conected_on">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="456313503842348" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="236121713977833" type="System">
+                            <param id="0" name="Object to create">Conected_on</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">240</param>
+                            <param id="3" name="Y">130</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="601577080928056" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="607451771650974" type="Conected_on">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="510290589158417" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="603786346843438" type="Conected_on" />
+                    </actions>
+                </event-block>
+                <comment>Gamepad Disconnected</comment>
+                <event-block sid="194582275681385">
+                    <conditions>
+                        <condition id="2" name="On gamepad disconnected" sid="502487796512320" type="Gamepad" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="849807298823943" type="Conected_off">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="686137138238140" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="762633414974990" type="System">
+                            <param id="0" name="Object to create">Conected_off</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">240</param>
+                            <param id="3" name="Y">130</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="652249312635519" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="187171959279175" type="Conected_off">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="336335590240602" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="151239131919666" type="Conected_off" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Config Game" sid="304592198706470" title="Btn&apos;s_Menu_View">
+            <sub-events>
+                <variable comment="0= NA /// 1= Menu /// 2= View" constant="0" name="btn_config" sid="571989112666232" static="1" type="number">0</variable>
+                <comment>Btn Views</comment>
+                <event-block any="1" sid="353673109017636">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="426119676059814" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">8</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="815965636187052" type="System">
+                            <param id="0" name="Variable">btn_config</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="121104638475945" type="Btn_View">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="617476287988223" type="System">
+                            <param id="0" name="Object to create">Btn_View</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">221.482</param>
+                            <param id="3" name="Y">195.876</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="545886277750047" type="Btn_View" />
+                        <action id="-16" name="Wait" sid="976754888957735" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="972282223547506" type="Btn_View" />
+                        <action id="-9" name="Set value" sid="546350107319319" type="System">
+                            <param id="0" name="Variable">btn_config</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Btn Menu</comment>
+                <event-block any="1" sid="380635442785482">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="529609845311816" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="550024499624981" type="System">
+                            <param id="0" name="Variable">btn_config</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="274890392896270" type="Btn_Menu">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="276107539626398" type="System">
+                            <param id="0" name="Object to create">Btn_Menu</param>
+                            <param id="1" name="Layer">&quot;Btns&quot;</param>
+                            <param id="2" name="X">261.681</param>
+                            <param id="3" name="Y">195.276</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="927749170954680" type="Btn_Menu" />
+                        <action id="-16" name="Wait" sid="626657638907143" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="106216451118809" type="Btn_Menu" />
+                        <action id="-9" name="Set value" sid="795508974394242" type="System">
+                            <param id="0" name="Variable">btn_config</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

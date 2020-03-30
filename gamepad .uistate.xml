@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">Xbox</layout>
+        <event-sheet order="1">EVJoysticTestMode</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/System/" />
+        <folder expanded="0" path="object-folder/JoysticTestMode/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/JoysticTestMode/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/JoysticTestMode/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/ControlBG/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/L1/" />
+        <folder expanded="1" path="animation-folder/L2/" />
+        <folder expanded="1" path="animation-folder/R1/" />
+        <folder expanded="1" path="animation-folder/R2/" />
+        <folder expanded="1" path="animation-folder/Btn_X/" />
+        <folder expanded="1" path="animation-folder/Btn_Y/" />
+        <folder expanded="1" path="animation-folder/Btn_A/" />
+        <folder expanded="1" path="animation-folder/Btn_B/" />
+        <folder expanded="1" path="animation-folder/Btn_View/" />
+        <folder expanded="1" path="animation-folder/Btn_Menu/" />
+        <folder expanded="1" path="animation-folder/Analog_Left/" />
+        <folder expanded="1" path="animation-folder/Analog_Right/" />
+        <folder expanded="1" path="animation-folder/Dpad/" />
+        <folder expanded="1" path="animation-folder/Btn_middle/" />
+        <folder expanded="1" path="animation-folder/L_R/" />
+    </folders-expanded>
+</c2uistate>

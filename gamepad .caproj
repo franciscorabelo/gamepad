@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>gamepad </name>
+    <description></description>
+    <version>3</version>
+    <author>Francisco Rabelo</author>
+    <author-email></author-email>
+    <author-website>https://www.franciscorabelo.com.br/</author-website>
+    <app-id></app-id>
+    <unique-id>17thilvu9nvc</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>270</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox integer scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="System">
+            <object-type name="Function" sid="322860285710435">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Gamepad" sid="686201798438713">
+                <plugin id="gamepad" />
+            </object-type>
+            <object-type name="Keyboard" sid="203071626500398">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Browser" sid="155979468756953">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="NWjs" sid="782416719400300">
+                <plugin id="NodeWebkit" />
+            </object-type>
+            <object-type name="LocalStorage" sid="122717664083740">
+                <plugin id="LocalStorage" />
+            </object-type>
+            <object-type name="Audio" sid="439153914301282">
+                <plugin id="Audio" />
+            </object-type>
+        </object-folder>
+        <object-folder name="JoysticTestMode">
+            <object-type name="ControlBG" sid="575242799709410">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="841652129166577" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Francisco\Desktop\XboxControl2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl5.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl6.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite2" sid="168330711157793">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="696018344873175" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl5.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="L1" sid="107914465543944">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="561552412587514">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="706171359028109" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="L2" sid="475963179733981">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="744380132011059">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="162795630621903" speed="0">
+                        <frame duration="1" hotspotX="0.507463" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="R1" sid="819174277888235">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="421940105631435">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="455662404979239" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="R2" sid="637584812288468">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="579322392201535">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="748789175709637" speed="0">
+                        <frame duration="1" hotspotX="0.507463" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Btn_X" sid="137280198213432">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="885148381921392">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="519015773416808" speed="0">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.52381" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Btn_Y" sid="854606257267206">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="190434267928312">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="185436259422925" speed="0">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.52381" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Btn_A" sid="118178497896793">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="479605599434259">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="134793532087614" speed="0">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.52381" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Btn_B" sid="351516048788201">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="488108781336036">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="755557637489762" speed="0">
+                        <frame duration="1" hotspotX="0.52381" hotspotY="0.52381" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Btn_View" sid="114680353599426">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="368934074534797">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="749618620219408" speed="0">
+                        <frame duration="1" hotspotX="0.538462" hotspotY="0.538462" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Btn_Menu" sid="589227043379825">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="986839757643643">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="802775476858691" speed="0">
+                        <frame duration="1" hotspotX="0.538462" hotspotY="0.538462" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Analog_Left" sid="660849687289759">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="773276273131533" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Analog_Right" sid="659621567981111">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="664853925043372" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Dpad" sid="134346842514001">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="960830653427823">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="964433455418858" speed="0">
+                        <frame duration="1" hotspotX="0.538462" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Btn_middle" sid="492680442683377">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="171069135241100">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="381071677271356" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl5.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Conected_off" sid="220111054264786">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Conected_on" sid="455462588980688">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="L_R" sid="875303298229923">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="380031578690484">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="569037902184122" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\00_00\0 _ Trabalhos\0_bit_in_Graphics\XboxControl5.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout-folder name="JoysticTestMode">
+            <layout>Xbox.xml</layout>
+            <layout>Bank_Image.xml</layout>
+        </layout-folder>
+    </layout-folder>
+    <event-folder>
+        <event-folder name="JoysticTestMode">
+            <event-sheet>EVJoysticTestMode.xml</event-sheet>
+        </event-folder>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Function" uid="2" />
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Gamepad" uid="4">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="35" />
+        <global-instance type="NWjs" uid="36" />
+        <global-instance type="LocalStorage" uid="42" />
+        <global-instance type="Audio" uid="44">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
